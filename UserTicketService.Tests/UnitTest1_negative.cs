@@ -7,7 +7,7 @@ namespace UserTicketService.Tests
         public void Subtraction_MustReturnCorrectValue()
         {
             Calculator calculator = new Calculator();
-            Assert.That(calculator.Subtraction(300, 10) == 290);
+            Assert.That(calculator.Subtraction(300, 10) == 20);
         }
     }
 }
