@@ -1,34 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-    class Program
-    {
-
-        static void Main(string[] args)
-        {
-
-        }
-    }
-
-public class UserRepository : IUserRepository
+﻿class Program
 {
-    public IEnumerable<User> FindAll()
+    static void Main(string[] args)
     {
-        return null;
+        Calculator calculator = new Calculator();
+        Console.WriteLine(calculator.Subtraction(300, 10));
     }
 }
-
-public interface IUserRepository
+public class Calculator
 {
-    IEnumerable<User> FindAll();
-}
-
-public class User
-{
-    public string Name
+    public int Additional(int a, int b)
     {
-        get;
-        set;
+        return a + b;
+    }
+
+    public int Subtraction(int a, int b)
+    {
+        return a - b;
+    }
+
+    public int Miltiplication(int a, int b)
+    {
+        return a * b;
+    }
+
+    public int Division(int a, int b)
+    {
+        return a / b;
     }
 }
